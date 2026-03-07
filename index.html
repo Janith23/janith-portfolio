@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janith | Computer Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#050505] text-gray-300 selection:bg-cyan-500/30 overflow-x-hidden cursor-default">
+
+    <!-- Custom Cursor & Background Canvas -->
+    <div id="custom-cursor"
+        class="fixed w-5 h-5 rounded-full border border-cyan-400 pointer-events-none z-[100] mix-blend-screen transition-transform duration-75 ease-out hidden md:block">
+    </div>
+    <div id="cursor-dot"
+        class="fixed w-1 h-1 bg-cyan-400 rounded-full pointer-events-none z-[100] mix-blend-screen hidden md:block">
+    </div>
+    <canvas id="particles-bg" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+    <nav class="fixed w-full z-50 backdrop-blur-md border-b border-white/5 py-4 px-8 flex justify-center items-center">
+        <div class="flex justify-between items-center w-full max-w-6xl">
+            <div class="font-mono text-cyan-400 font-bold tracking-tighter text-lg">{"
+                < JANITH />"}
+            </div>
+            <div class="flex gap-4 md:gap-6 text-[9px] md:text-[10px] uppercase tracking-[0.2em] font-semibold">
+                <a href="#home" class="hover:text-cyan-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors hidden md:inline">Experience</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home"
+        class="h-screen flex flex-col justify-center items-center relative overflow-hidden px-6 text-center">
+        <div class="scan-line"></div>
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: radial-gradient(#22d3ee 0.5px, transparent 0.5px); background-size: 30px 30px;">
+        </div>
+
+        <div class="relative z-10 max-w-4xl">
+            <h1 id="line-1" class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-2 min-h-[1.2em]"></h1>
+            <h2 id="line-2"
+                class="text-2xl md:text-6xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 italic min-h-[1.2em]">
+            </h2>
+
+            <p class="reveal font-mono text-cyan-500/60 mt-8 tracking-widest text-xs uppercase">[ Status: System_Online
+                ]</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto py-24 px-6 relative z-10">
+        <div class="reveal flex items-center gap-4 mb-12">
+            <h2 class="text-xl md:text-2xl font-bold text-white uppercase tracking-widest">System_Specs</h2>
+            <div class="h-[1px] flex-grow bg-white/10"></div>
+        </div>
+        <div
+            class="reveal space-y-6 text-gray-400 leading-relaxed font-mono text-sm md:text-base bg-[#0a0a0a] border border-white/5 p-8 rounded-xl">
+            <p class="text-cyan-500">> Initializing bio sequence...</p>
+            <p class="text-white">I am currently an undergraduate computer engineer with 4+ years of experience in UI/UX
+                design.</p>
+            <p>I specialize in bridging the gap between elegant user interfaces and robust backend systems. My passion
+                lies in crafting digital experiences that are not only visually stunning but technically sound.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-6xl mx-auto py-24 px-6 relative z-10">
+        <div class="reveal flex items-center gap-4 mb-16">
+            <h2 class="text-xl md:text-2xl font-bold text-white uppercase tracking-widest">Execution_History</h2>
+            <div class="h-[1px] flex-grow bg-white/10"></div>
+        </div>
+
+        <div class="reveal grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- UI/UX -->
+            <div
+                class="group p-6 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300">
+                <div class="text-cyan-500 font-mono text-xs mb-4 uppercase tracking-widest">01 //</div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">UI/UX Design
+                </h3>
+                <p class="text-gray-500 text-sm leading-relaxed">4+ years creating intuitive, user-centered designs and
+                    wireframes focused on premium aesthetics and usability.</p>
+            </div>
+
+            <!-- Web Dev -->
+            <div
+                class="group p-6 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300">
+                <div class="text-cyan-500 font-mono text-xs mb-4 uppercase tracking-widest">02 //</div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Web Dev</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Full-stack development building scalable web
+                    applications with modern frameworks and responsive architectures.</p>
+            </div>
+
+            <!-- ML Engineering -->
+            <div
+                class="group p-6 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300">
+                <div class="text-cyan-500 font-mono text-xs mb-4 uppercase tracking-widest">03 //</div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">ML Engineering
+                </h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Integrating LLMs and training machine learning models
+                    for intelligent, data-driven software solutions.</p>
+            </div>
+
+            <!-- Ethical Hacking -->
+            <div
+                class="group p-6 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300">
+                <div class="text-cyan-500 font-mono text-xs mb-4 uppercase tracking-widest">04 //</div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Ethical
+                    Hacking</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Conducting vulnerability assessments, penetration
+                    testing, and securing networks against emerging threats.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto py-24 px-6 relative z-10">
+        <div class="reveal flex items-center gap-4 mb-16">
+            <h2 class="text-2xl font-bold text-white uppercase tracking-widest">Engineering_Logs</h2>
+            <div class="h-[1px] flex-grow bg-white/10"></div>
+        </div>
+        <div id="project-grid" class="grid md:grid-cols-2 gap-10">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto py-24 px-6 relative z-10">
+        <div class="reveal flex items-center gap-4 mb-16">
+            <h2 class="text-xl md:text-2xl font-bold text-white uppercase tracking-widest">System_Capabilities</h2>
+            <div class="h-[1px] flex-grow bg-white/10"></div>
+        </div>
+
+        <div
+            class="reveal grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-6 md:gap-8 justify-center items-center">
+            <!-- C -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-c-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">C</span>
+            </div>
+            <!-- C++ -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-cplusplus-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">C++</span>
+            </div>
+            <!-- C# -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-csharp-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">C#</span>
+            </div>
+            <!-- Java -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-java-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span
+                    class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">Java</span>
+            </div>
+            <!-- Python -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-python-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span
+                    class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">Python</span>
+            </div>
+            <!-- HTML -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-html5-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span
+                    class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">HTML</span>
+            </div>
+            <!-- CSS -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-css3-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">CSS</span>
+            </div>
+            <!-- JavaScript -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-javascript-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span
+                    class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">JavaScript</span>
+            </div>
+            <!-- React -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-react-original text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span
+                    class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">React</span>
+            </div>
+            <!-- PHP -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-php-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">PHP</span>
+            </div>
+            <!-- SQL -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-mysql-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">SQL</span>
+            </div>
+            <!-- Figma -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-figma-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span
+                    class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">Figma</span>
+            </div>
+            <!-- Adobe PS -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-photoshop-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">Ps</span>
+            </div>
+            <!-- Adobe PR -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-premierepro-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">Pr</span>
+            </div>
+            <!-- Adobe Illustrator -->
+            <div
+                class="group flex flex-col items-center justify-center p-4 bg-[#0a0a0a] border border-white/5 rounded-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
+                <i
+                    class="devicon-illustrator-plain text-4xl text-gray-400 group-hover:text-cyan-400 transition-colors duration-300 mb-3"></i>
+                <span class="text-[10px] font-mono text-gray-500 group-hover:text-cyan-300 transition-colors">Ai</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact"
+        class="border-t border-white/5 mt-24 py-12 relative z-10 bg-gradient-to-b from-transparent to-[#050505]">
+        <div class="max-w-4xl mx-auto px-6 text-center reveal">
+            <h2 class="text-3xl font-bold text-white mb-6">Initiate_Connection</h2>
+            <p class="text-gray-400 mb-8 max-w-md mx-auto">Currently open for new opportunities, collaborations, and
+                hackathons. My inbox is always open.</p>
+
+            <a href="mailto:your-email@example.com"
+                class="inline-block px-8 py-3 bg-cyan-500/10 border border-cyan-500/50 text-cyan-400 font-mono uppercase tracking-widest text-sm hover:bg-cyan-500 hover:text-black transition-all duration-300">
+                Ping_Server
+            </a>
+
+            <div class="flex justify-center gap-6 mt-16 font-mono text-sm">
+                <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors">GitHub</a>
+                <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors">LinkedIn</a>
+                <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors">Twitter</a>
+            </div>
+            <p class="text-gray-600 text-[10px] mt-8 uppercase tracking-widest">© 2025 Janith. System Halted.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
