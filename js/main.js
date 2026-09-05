@@ -15,6 +15,13 @@ const projects = [
         tag: "COMPUTER ENGINEERING (2YP)",
         desc: "Integrated OCR and local Mistral LLMs for automated workflow optimization. Featured custom shading UI for OCR selection.",
         tech: ["Python", "Mistral", "Tkinter", "OCR"]
+    },
+
+    {
+        title: "ForensicDB — Forensic Medicine Department Management System",
+        tag: "CO2050CO2050 – Database Systems",
+        desc: "Developed a secure web-based management system for forensic medicine departments, managing clinical cases, post-mortem investigations, evidence chain-of-custody, laboratory requests, and court submissions. Implemented a structured MySQL database with 28 tables, stored procedures, triggers, and Role-Based Access Control (RBAC).",
+        tech: ["Python", "Flask", "MySQL", "SQL","RBAC", "Database Design"]
     }
 ];
 

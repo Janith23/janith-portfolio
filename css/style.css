@@ -36,10 +36,22 @@ body { font-family: 'Inter', sans-serif; }
 }
 
 /* Project Card Glow */
-.project-card:hover {
-    box-shadow: 0 0 50px rgba(34, 211, 238, 0.08);
+/* Fix for Project Card Alignment */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
+/* This makes the description stretch to fill any empty space */
+.project-card p {
+    flex-grow: 1; 
+}
+
+/* This pins the skills section exactly to the bottom */
+.project-card > div:last-child {
+    margin-top: auto; 
+}
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
