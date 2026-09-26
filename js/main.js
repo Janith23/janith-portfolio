@@ -2,6 +2,12 @@
  */
 const engineeringLogs = [
     {
+        title: "HACKERS' CLUB - UoP",
+        tag: "HACKERS' CLUB - UoP",
+        desc: "Served as a committee member for 11 months (Aug 2025 - Jun 2026), contributing to club activities, event organization, and designing online graphics.",
+        tech: ["Organization Skills", "Online Graphics", "Leadership"]
+    },
+    {
         title: "IESL Student Chapter",
         tag: "UNIVERSITY OF PERADENIYA",
         desc: "Part of the design and organizing team for the IESL Student Chapter 2025 at the University of Peradeniya.",
@@ -11,17 +17,22 @@ const engineeringLogs = [
 
 const projects = [
     {
-        title: "AI Smart Assistant",
+        title: "Advanced Modular Panorama Generation Pipeline",
+        tag: "CO5430 – IMAGE PROCESSING",
+        desc: "Engineered a production-grade pipeline stitching overlapping smartphone photos into flawless panoramas. Implemented Global Bundle Adjustment (Levenberg-Marquardt) to eliminate drift, SIFT + FLANN matching for sub-pixel accuracy (0.54px RMSE), Laplacian pyramid multi-band blending, and smart fallback logic. Built alongside Danuja Chandrasena, Bhagya Karunanayake, and Ashen Hirushan.",
+        tech: ["Computer Vision", "Python", "SIFT/FLANN", "Bundle Adjustment", "OpenCV"]
+    },
+    {
+        title: "AI Smart Assistant - SENTINEL",
         tag: "COMPUTER ENGINEERING (2YP)",
         desc: "Integrated OCR and local Mistral LLMs for automated workflow optimization. Featured custom shading UI for OCR selection.",
         tech: ["Python", "Mistral", "Tkinter", "OCR"]
     },
-
     {
         title: "ForensicDB — Forensic Medicine Department Management System",
-        tag: "CO2050CO2050 – Database Systems",
+        tag: "CO2050 – DATABASE SYSTEMS",
         desc: "Developed a secure web-based management system for forensic medicine departments, managing clinical cases, post-mortem investigations, evidence chain-of-custody, laboratory requests, and court submissions. Implemented a structured MySQL database with 28 tables, stored procedures, triggers, and Role-Based Access Control (RBAC).",
-        tech: ["Python", "Flask", "MySQL", "SQL","RBAC", "Database Design"]
+        tech: ["Python", "Flask", "MySQL", "SQL", "RBAC", "Database Design"]
     }
 ];
 
