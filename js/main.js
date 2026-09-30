@@ -33,6 +33,18 @@ const projects = [
         tag: "CO2050 – DATABASE SYSTEMS",
         desc: "Developed a secure web-based management system for forensic medicine departments, managing clinical cases, post-mortem investigations, evidence chain-of-custody, laboratory requests, and court submissions. Implemented a structured MySQL database with 28 tables, stored procedures, triggers, and Role-Based Access Control (RBAC).",
         tech: ["Python", "Flask", "MySQL", "SQL", "RBAC", "Database Design"]
+    },
+    {
+        title: "8-bit Single-Cycle Processor ",
+        tag: "COMPUTER ARCHITECTURE",
+        desc: "Designed and implemented an 8-bit single-cycle MIPS-based CPU in Verilog HDL, supporting a simple instruction set with caching. Techniques: MIPS, computer architecture, caching.",
+        tech: ["Verilog HDL", "GTKWave", "MIPS", "Computer Architecture", "Caching"]
+    },
+    {
+        title: "3D Graphics Engine — Systems Programming Project ",
+        tag: "COMPUTER SYSTEMS PROGRAMMING",
+        desc: "Designed and built a complete 3D graphics engine from scratch in pure C, implementing the full rendering pipeline without external libraries. Features include custom canvas generation, line rasterization, 3D vector/matrix mathematics, geometric transformations, perspective projection, and Lambert shading. Created dynamic demos with orbital and bouncing motion using Bézier interpolation.",
+        tech: ["Pure C", "Computer Graphics", "3D Rendering", "Linear Algebra"]
     }
 ];
 
